@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/witty/static/css/main.3e6c6198.chunk.css",
+    "main.js": "/witty/static/js/main.8d21c260.chunk.js",
+    "main.js.map": "/witty/static/js/main.8d21c260.chunk.js.map",
+    "runtime-main.js": "/witty/static/js/runtime-main.a7e52c34.js",
+    "runtime-main.js.map": "/witty/static/js/runtime-main.a7e52c34.js.map",
+    "static/js/2.e5698b3f.chunk.js": "/witty/static/js/2.e5698b3f.chunk.js",
+    "static/js/2.e5698b3f.chunk.js.map": "/witty/static/js/2.e5698b3f.chunk.js.map",
+    "index.html": "/witty/index.html",
+    "precache-manifest.4edf885cea19008cb0ec1e96b30f8d0d.js": "/witty/precache-manifest.4edf885cea19008cb0ec1e96b30f8d0d.js",
+    "service-worker.js": "/witty/service-worker.js",
+    "static/css/main.3e6c6198.chunk.css.map": "/witty/static/css/main.3e6c6198.chunk.css.map",
+    "static/js/2.e5698b3f.chunk.js.LICENSE.txt": "/witty/static/js/2.e5698b3f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a7e52c34.js",
+    "static/js/2.e5698b3f.chunk.js",
+    "static/css/main.3e6c6198.chunk.css",
+    "static/js/main.8d21c260.chunk.js"
+  ]
+}
