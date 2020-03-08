@@ -8,11 +8,7 @@ interface IFetcher {
 
 interface IDataItem {
   id: string,
-  author: string,
-  width: number,
-  height: number,
-  url: string,
-  download_url: string
+  author: string
 }
 
 const useFetcher = ({ url, page }: IFetcher) => {
@@ -20,14 +16,17 @@ const useFetcher = ({ url, page }: IFetcher) => {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
 
+  const [hasMore, setHasMore] = useState(true)
+
   useEffect(() => {
     const fetchData = async ({ url, page }: IFetcher) => {
       setLoading(true)
 
       try {
-        const response = await axios({ method: 'GET', url, params: { page } })
+        const response = await axios({ method: 'GET', url, params: { page, limit: 10 } })
 
         setData((prevData) => [...prevData, ...response.data])
+        setHasMore(response.data.length > 0)
       } catch (e) {
         setError(e)
       } finally {
@@ -38,7 +37,7 @@ const useFetcher = ({ url, page }: IFetcher) => {
     fetchData({ url, page })
   }, [url, page])
 
-  return { data, loading, error }
+  return { data, loading, error, hasMore }
 }
 
 export default useFetcher
