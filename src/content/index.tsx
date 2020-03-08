@@ -1,5 +1,5 @@
 interface PhotoItem {
-  id: number;
+  id: number,
   desc: string,
   src: string
 }
