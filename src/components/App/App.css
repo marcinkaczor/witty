@@ -48,3 +48,20 @@
 .meme__img {
   width: 100%;
 }
+
+.meme__footer {
+  display: flex;
+}
+
+.meme__button {
+  border: 0;
+  background: 0 0;
+  cursor: pointer;
+  padding: .5rem;
+  font-size: 1.25rem;
+}
+
+.meme__button:focus {
+  outline: 0;
+}
+
